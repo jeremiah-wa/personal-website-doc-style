@@ -2,7 +2,12 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>Jeremiah Wangaruro</span>,
+  logo: (
+    <>
+      {/* TODO: Add Logo */}
+      <span>Jeremiah Wangaruro</span>
+    </>
+  ),
   project: {
     link: 'https://github.com/jeremiah-wa',
   },
@@ -27,6 +32,20 @@ const config: DocsThemeConfig = {
   footer: {
     text: '',
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: 'Jeremiah Wangaruro'
+    }
+  },
+  head: (
+    <>
+      <meta
+        name="description"
+        content="Jeremiah Wangaruro's Portfolio"
+      />
+      <link rel="icon" href="./static/logo.jpg" type="image/jpeg" />
+    </>
+  )
 }
 
 export default config
