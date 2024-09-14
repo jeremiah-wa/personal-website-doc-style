@@ -22,6 +22,7 @@ const config: DocsThemeConfig = {
       </svg>
     )
   },
+  editLink: {text: '', component: null},
   docsRepositoryBase: 'https://github.com/jeremiah-wa/personal-website-doc-style',
   footer: {
     text: '',
