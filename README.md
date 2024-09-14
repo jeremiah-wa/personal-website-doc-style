@@ -1,23 +1,10 @@
-# Nextra Docs Template 
+# Personal Website - Jeremiah Wangaruro
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+Welcome to my personal website! This site serves as a portfolio, blog, and contact point for me. You can find more about my work, projects, and interests here.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## Features
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+- **Portfolio:** Showcasing my projects, including detailed descriptions and links to repositories.
+- **Blog:** Sharing my thoughts, tutorials, and insights on technology, programming, or personal interests.
+- **About Me:** A brief introduction to who I am, my skills, background, and experience.
+- **Contact:** Easy ways to reach me via social media or email.
