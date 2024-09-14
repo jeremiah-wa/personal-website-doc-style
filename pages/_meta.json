@@ -4,6 +4,12 @@
   "education": "Education",
   "books": "Books",
   "music": "Music",
+  "Resume": {
+    "title": "Resume ↗",
+    "type": "page",
+    "newWindow": true,
+    "href": "../static/JeremiahWangaruroResume.pdf"
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
