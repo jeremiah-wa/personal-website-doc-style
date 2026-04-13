@@ -1,43 +1,69 @@
 
-## **Civica**  
-**Data Scientist**  
-_February 2022 – April 2024, Belfast, Northern Ireland_
+## **aPriori Technologies**
+**Data Engineer**
+_November 2024 – March 2026, Belfast, Northern Ireland_
 
 ### Key Projects:
 
-- **Tourism Ireland: Dynamics 365 Reporting Solution**  
-  - **Data Extraction & Analysis**: Leveraged Azure Synapse to extract and analyze customer engagement data from Dynamics 365.
-  - **Dashboard & Report Development**: Created interactive dashboards and self-service reports using Power BI.
-  - **Client Collaboration**: Worked closely with clients to develop and deliver a suite of business intelligence (BI) reports tailored to their strategic goals.
+- **Source AI: ML-Powered Negotiation Assistant**
+  - Replaced Lambda-based ingestion jobs with Airbyte (CDC), reducing data ingestion latency and eliminating key bottlenecks feeding ML workloads.
+  - Contributed to the architecture of Source AI, an ML-powered negotiation assistant leveraging LLMs for automated sourcing workflows.
 
-- **Northern Ireland Appeals Service: On-prem Reporting Solution Refactor**  
-  - **Optimization of SSAS Data Model**: Implemented data partitioning and optimized SQL queries to enhance performance.
-  - **Self-Service Report Development**: Developed advanced interactive reports using Power BI Desktop and DAX.
-  - **Server Management**: Managed Analysis and Reporting Servers via SSMS, handling refresh jobs and automation triggers.
+- **GCP to AWS Cloud Migration**
+  - Migrated the data platform from GCP to AWS, contributing to technology decisions and implementation to ensure feature parity while optimising for cost and performance.
+  - Designed and implemented ABAC IAM policies using resource tagging to enforce least-privilege access across cloud environments.
+  - Built custom dbt macros for JSON flattening and Redshift SUPER column handling, improving transformation reliability.
 
-**Tools Used**: Azure Synapse, Power BI, T-SQL, DAX, SSAS, SSRS, Power Query
+- **aPriori Data Mesh Platform**
+  - Architected and developed a federated Data Mesh platform enabling domain-driven data ownership with automated metadata management and consistent governance across business units.
+  - Created `data-platform-cli`, an internal Python CLI tool (Typer-based) that standardises Data Product scaffolding, deployment, and integration with dbt and Airflow.
+  - Integrated Great Expectations into dbt pipelines for continuous data validation and contract testing, improving data quality SLAs.
+
+**Tools Used**: Python, SQL, dbt, Airflow (MWAA), AWS (Redshift, S3, Lambda, ECS), GCP (BigQuery, Cloud Composer), Airbyte, Great Expectations, Docker
 
 ---
 
-## **Sentireal**  
-**Data Scientist**  
+## **Civica**
+**Data Scientist**
+_February 2022 – March 2024, Belfast, Northern Ireland_
+
+### Key Projects:
+
+- **Tourism Ireland: Dynamics 365 Reporting Solution**
+  - Extracted and transformed customer engagement data from Dynamics 365 using Azure Synapse Analytics.
+  - Designed and developed interactive Power BI dashboards providing self-service analytics for marketing campaign performance.
+  - Collaborated with stakeholders to define KPIs and create strategic BI reports that informed €2M+ marketing budget allocation.
+
+- **Northern Ireland Appeals Service: On-Premises Reporting Solution**
+  - Refactored and optimised legacy SSAS tabular models, implementing data partitioning and query optimisation that reduced report load times.
+  - Developed advanced DAX measures and interactive Power BI reports enabling self-service analytics for case management.
+  - Managed SSAS and SSRS infrastructure, including automated refresh schedules and maintenance.
+
+**Tools Used**: Azure Synapse Analytics, Power BI, T-SQL, DAX, SSAS, SSRS, Power Query, SQL Server, Dynamics 365
+
+---
+
+## **Sentireal**
+**Data Scientist**
 _November 2020 – February 2022, Belfast, Northern Ireland_
 
 ### Key Projects:
 
-- **InterTradeIreland Co-Innovate: VR Sim Training Solution**  
-  - **Data Extraction & Transformation**: Utilized AWS Lambda for cost-effective data extraction and formatting from API.
-  - **Data Exploration & Analysis**: Conducted data wrangling and preliminary analysis using AWS SageMaker.
-  - **Research & Experimentation**: Explored predictive models and executed experiments to support model selection using AWS SageMaker.
-  - **Development of CT/CM Pipeline**: Built a machine learning pipeline with AWS SageMaker and CodePipeline for automated training, testing, and deployment.
+- **InterTradeIreland Co-Innovate: VR Simulation Training Platform**
+  - Designed and implemented a serverless data extraction pipeline using AWS Lambda for cost-efficient API integration.
+  - Conducted exploratory data analysis and feature engineering using AWS SageMaker notebooks to identify key performance indicators.
+  - Developed and deployed an end-to-end ML pipeline with AWS SageMaker and CodePipeline for automated model training, evaluation, and deployment to API endpoints.
+  - Trained and optimised predictive models using Scikit-Learn and TensorFlow to assess VR training effectiveness.
 
-**Tools Used**: Python, AWS Lambda, AWS SageMaker, Scikit-Learn, TensorFlow, Docker, AWS API Gateway, CodePipeline
+**Tools Used**: Python, Scikit-Learn, TensorFlow, Docker, AWS (Lambda, SageMaker, Cognito, API Gateway, CodePipeline, CodeDeploy)
 
 ---
 
-## **Skills & Competencies**:
+## **Skills & Competencies**
 
-- **Programming Languages**: Python, SQL, JavaScript, TypeScript
-- **Data Technologies**: Azure Synapse, Power BI, AWS (SageMaker, CodePipeline, Lambda), SSAS, SSRS
-- **Methodologies**: Data Engineering, Machine Learning, Predictive Analytics, MLOps
-- **Other**: T-SQL, DAX, Power Query, Docker, Cloud Services (AWS, Azure)
+- **ML & Model Deployment**: AWS SageMaker (notebooks, training, endpoint deployment), Scikit-Learn, TensorFlow, predictive modelling, feature engineering, ML pipeline CI/CD (CodePipeline/CodeDeploy)
+- **Languages & Frameworks**: Python (Typer, Pydantic, FastAPI), SQL (PostgreSQL, Redshift, BigQuery, T-SQL), JavaScript/TypeScript, dbt Core, DAX, Power Query M, Bash
+- **Orchestration & Pipelines**: Apache Airflow (MWAA, Cloud Composer), Airbyte CDC, AWS CodePipeline, DAG-based workflow design, retry logic, idempotent execution patterns
+- **Cloud & Infrastructure**: AWS (S3, Redshift, Lambda, ECS, MWAA, SageMaker, Cognito, API Gateway, CodePipeline), GCP (BigQuery, Cloud Composer, Cloud Build), Azure (Synapse, Data Factory, SSAS, SSRS), Docker, Git, Jenkins
+- **Data & Governance**: Data Mesh architecture, medallion architecture, Great Expectations, dbt, data contracts, ABAC IAM policies, federated governance, metadata management, data modelling (CDC, ETL/ELT)
+- **BI & Analytics**: Power BI Desktop/Service, DAX, SSAS, SSRS, data visualisation, self-service reporting
