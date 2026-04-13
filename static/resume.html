@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeremiah Wangaruro — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 24px;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  /* === CORE COMPETENCIES === */
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+    font-weight: 400;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  .job-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 6px;
+    padding-left: 0;
+  }
+
+  /* === PROJECTS === */
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  /* === EDUCATION === */
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === SKILLS === */
+  .skill-row {
+    margin-bottom: 5px;
+    font-size: 10.5px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 10px 16px;
+    }
+  }
+
+  /* === PAGE BREAK CONTROL === */
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>Jeremiah Wangaruro</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>jeremiah.ruro@gmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://www.linkedin.com/in/jeremiahwangaruro/">linkedin.com/in/jeremiahwangaruro</a>
+      <span class="separator">|</span>
+      <a href="https://jeremiahruro.com">jeremiahruro.com</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/jeremiah-wa">github.com/jeremiah-wa</a>
+      <span class="separator">|</span>
+      <span>Melbourne, VIC</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Data Engineer with 5+ years building production data platforms, ML pipelines, and Python tooling across AWS, GCP, and Azure.
+      Background spans the full ML lifecycle: data extraction (Lambda, Airbyte CDC), model training and deployment (SageMaker, Scikit-Learn, TensorFlow, CodePipeline),
+      and production orchestration (Airflow, dbt). Built internal CLI frameworks, federated Data Mesh governance, and ABAC access control systems.
+    </div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section avoid-break">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Data Engineering</span>
+      <span class="competency-tag">ML Pipelines &amp; MLOps</span>
+      <span class="competency-tag">Apache Airflow (MWAA)</span>
+      <span class="competency-tag">dbt Core</span>
+      <span class="competency-tag">Airbyte CDC</span>
+      <span class="competency-tag">AWS SageMaker</span>
+      <span class="competency-tag">Data Mesh Architecture</span>
+      <span class="competency-tag">Python (Typer · Pydantic · FastAPI)</span>
+      <span class="competency-tag">SQL (Redshift · BigQuery · T-SQL)</span>
+      <span class="competency-tag">AWS / GCP / Azure</span>
+      <span class="competency-tag">Docker</span>
+      <span class="competency-tag">Great Expectations</span>
+      <span class="competency-tag">Power BI &amp; DAX</span>
+      <span class="competency-tag">ABAC / IAM Policies</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <!-- aPriori Technologies -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">aPriori Technologies</span>
+        <span class="job-period">Nov 2024 – Mar 2026</span>
+      </div>
+      <div class="job-role">Data Engineer <span class="job-location">• Belfast, Northern Ireland</span></div>
+      <ul>
+        <li><strong>Source AI:</strong> Replaced Lambda-based ingestion jobs with Airbyte (CDC), reducing data ingestion latency and eliminating key bottlenecks feeding ML workloads. Contributed to the architecture of Source AI, an ML-powered negotiation assistant leveraging LLMs for automated sourcing workflows.</li>
+        <li><strong>GCP → AWS Migration:</strong> Migrated the data platform from GCP to AWS, contributing to technology decisions and implementation to ensure feature parity while optimising for cost and performance. Designed and implemented ABAC IAM policies using resource tagging to enforce least-privilege access. Built custom dbt macros for JSON flattening and Redshift SUPER column handling.</li>
+        <li><strong>Data Mesh Platform:</strong> Architected a federated Data Mesh platform enabling domain-driven data ownership with automated metadata management and consistent governance. Created <em>data-platform-cli</em>, a Typer-based Python CLI standardising Data Product scaffolding, deployment, and integration with dbt and Airflow. Integrated Great Expectations into dbt pipelines for continuous data validation and contract testing.</li>
+      </ul>
+      <div class="job-tech"><strong>Stack:</strong> Python · SQL · dbt · Airflow (MWAA) · AWS (Redshift, S3, Lambda, ECS) · GCP (BigQuery, Cloud Composer) · Airbyte · Great Expectations · Docker</div>
+    </div>
+
+    <!-- Civica -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Civica</span>
+        <span class="job-period">Feb 2022 – Mar 2024</span>
+      </div>
+      <div class="job-role">Data Scientist <span class="job-location">• Belfast, Northern Ireland</span></div>
+      <ul>
+        <li><strong>Tourism Ireland:</strong> Extracted and transformed customer engagement data from Dynamics 365 via Azure Synapse Analytics. Designed interactive Power BI dashboards and strategic BI reports that informed €2M+ marketing budget allocation.</li>
+        <li><strong>NI Appeals Service:</strong> Refactored legacy SSAS tabular models with data partitioning and query optimisation, reducing report load times. Developed advanced DAX measures and Power BI reports enabling self-service analytics for case management. Managed SSAS and SSRS infrastructure including automated refresh schedules.</li>
+      </ul>
+      <div class="job-tech"><strong>Stack:</strong> Azure Synapse Analytics · Power BI · T-SQL · DAX · SSAS · SSRS · Power Query · SQL Server · Dynamics 365</div>
+    </div>
+
+    <!-- Sentireal -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Sentireal</span>
+        <span class="job-period">Nov 2020 – Feb 2022</span>
+      </div>
+      <div class="job-role">Data Scientist <span class="job-location">• Belfast, Northern Ireland</span></div>
+      <ul>
+        <li><strong>InterTradeIreland Co-Innovate:</strong> Designed a serverless data extraction pipeline using AWS Lambda for cost-efficient API integration. Conducted EDA and feature engineering in SageMaker notebooks. Developed and deployed an end-to-end ML pipeline with SageMaker and CodePipeline for automated model training, evaluation, and deployment. Trained predictive models using Scikit-Learn and TensorFlow to assess VR training effectiveness.</li>
+      </ul>
+      <div class="job-tech"><strong>Stack:</strong> Python · Scikit-Learn · TensorFlow · Docker · AWS (Lambda, SageMaker, Cognito, API Gateway, CodePipeline, CodeDeploy)</div>
+    </div>
+  </div>
+
+  <!-- PUBLICATIONS & PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">Publications &amp; Projects</div>
+
+    <div class="project">
+      <div class="project-title">Recommender Systems in Virtual Learning Environments <span class="project-badge">Publication</span></div>
+      <div class="project-desc">Investigated the application of conventional recommendation models in virtual learning environments. Published in AI Journal.</div>
+      <div class="project-tech">aijourn.com/recommender-systems-in-virtual-learning-environments</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Multi-criteria Recommender Systems</div>
+      <div class="project-desc">Comprehensive comparative study investigating the effectiveness of multi-criteria ratings on recommendation quality.</div>
+      <div class="project-tech">Python · Scikit-Learn · Pandas · SciPy · SQL</div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">BSc Computer Science with Data Science &nbsp;·&nbsp; <span class="edu-org">University College Dublin</span></span>
+        <span class="edu-year">2016 – 2020</span>
+      </div>
+      <div class="edu-desc">Second Class Honours, Grade 1 (2:1) &nbsp;·&nbsp; GPA: 3.43 / 4.2 &nbsp;·&nbsp; Relevant coursework: Data Science in Python, Programming for Big Data, Probability &amp; Statistical Analysis, Machine Learning, Introduction to Artificial Intelligence</div>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-row"><span class="skill-category">ML &amp; Model Deployment:</span> AWS SageMaker (notebooks, training, endpoint deployment), Scikit-Learn, TensorFlow, predictive modelling, feature engineering, ML pipeline CI/CD (CodePipeline/CodeDeploy)</div>
+    <div class="skill-row"><span class="skill-category">Languages &amp; Frameworks:</span> Python (Typer, Pydantic, FastAPI), SQL (PostgreSQL, Redshift, BigQuery, T-SQL), JavaScript/TypeScript, dbt Core, DAX, Power Query M, Bash</div>
+    <div class="skill-row"><span class="skill-category">Orchestration &amp; Pipelines:</span> Apache Airflow (MWAA, Cloud Composer), Airbyte CDC, AWS CodePipeline, DAG-based workflow design, retry logic, idempotent execution patterns</div>
+    <div class="skill-row"><span class="skill-category">Cloud &amp; Infrastructure:</span> AWS (S3, Redshift, Lambda, ECS, MWAA, SageMaker, Cognito, API Gateway, CodePipeline), GCP (BigQuery, Cloud Composer, Cloud Build), Azure (Synapse, Data Factory, SSAS, SSRS), Docker, Git, Jenkins</div>
+    <div class="skill-row"><span class="skill-category">Data &amp; Governance:</span> Data Mesh architecture, medallion architecture, Great Expectations, dbt, data contracts, ABAC IAM policies, federated governance, metadata management, data modelling (CDC, ETL/ELT)</div>
+    <div class="skill-row"><span class="skill-category">BI &amp; Analytics:</span> Power BI Desktop/Service, DAX, SSAS, SSRS, data visualisation, self-service reporting</div>
+  </div>
+
+</div>
+</body>
+</html>
