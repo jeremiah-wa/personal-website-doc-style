@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremiah-wa/personal-website-doc-style.git"
+    "url": "git+https://github.com/jeremiah-wa/jeremiahruro.git"
   },
   "author": "Jeremiah Wangaruro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shuding/nextra-docs-template/issues"
   },
-  "homepage": "https://github.com/jeremiah-wa/personal-website-doc-style#readme",
+  "homepage": "https://github.com/jeremiah-wa/jeremiahruro#readme",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",

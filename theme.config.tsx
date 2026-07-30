@@ -28,7 +28,7 @@ const config: DocsThemeConfig = {
     )
   },
   editLink: {text: '', component: null},
-  docsRepositoryBase: 'https://github.com/jeremiah-wa/personal-website-doc-style',
+  docsRepositoryBase: 'https://github.com/jeremiah-wa/jeremiahruro',
   footer: {
     text: '',
   },
