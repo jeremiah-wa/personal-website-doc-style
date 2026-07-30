@@ -51,6 +51,15 @@
     line-height: 1.1;
   }
 
+  .header-subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: hsl(187, 74%, 32%);
+    margin-bottom: 8px;
+  }
+
   .header-gradient {
     height: 2px;
     background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
@@ -157,6 +166,13 @@
     margin-bottom: 6px;
   }
 
+  .job-summary {
+    font-size: 10.5px;
+    color: #555;
+    line-height: 1.55;
+    margin-top: 2px;
+  }
+
   .job-location {
     font-size: 10px;
     color: #888;
@@ -177,13 +193,6 @@
 
   .job li strong {
     font-weight: 600;
-  }
-
-  .job-tech {
-    font-size: 9.5px;
-    color: #888;
-    margin-top: 6px;
-    padding-left: 0;
   }
 
   /* === PROJECTS === */
@@ -213,12 +222,6 @@
     color: #444;
     margin-top: 3px;
     line-height: 1.55;
-  }
-
-  .project-tech {
-    font-size: 9.5px;
-    color: #888;
-    margin-top: 3px;
   }
 
   /* === EDUCATION === */
@@ -298,6 +301,7 @@
   <!-- HEADER -->
   <div class="header avoid-break">
     <h1>Jeremiah Wangaruro</h1>
+    <div class="header-subtitle">SENIOR DATA ENGINEER</div>
     <div class="header-gradient"></div>
     <div class="contact-row">
       <span>jeremiah.ruro@gmail.com</span>
@@ -306,46 +310,58 @@
       <span class="separator">|</span>
       <a href="https://jeremiahruro.com">jeremiahruro.com</a>
       <span class="separator">|</span>
-      <a href="https://github.com/jeremiah-wa">github.com/jeremiah-wa</a>
-      <span class="separator">|</span>
       <span>Melbourne, VIC</span>
     </div>
   </div>
 
-  <!-- PROFESSIONAL SUMMARY -->
+  <!-- PROFILE -->
   <div class="section avoid-break">
-    <div class="section-title">Professional Summary</div>
+    <div class="section-title">Profile</div>
     <div class="summary-text">
-      Data Engineer with 5+ years building production data platforms, ML pipelines, and Python tooling across AWS, GCP, and Azure.
-      Background spans the full ML lifecycle: data extraction (Lambda, Airbyte CDC), model training and deployment (SageMaker, Scikit-Learn, TensorFlow, CodePipeline),
-      and production orchestration (Airflow, dbt). Built internal CLI frameworks, federated Data Mesh governance, and ABAC access control systems.
+      Senior Data Engineer with 5+ years turning data into reliable, trusted assets that business teams can act on confidently. Most recently led the design and
+      rollout of an automated data quality framework for Cartology's PlanIt retail-media platform, replacing manual release checks with automated gates so feature
+      work shipped faster with less risk. Prior work spans federated data governance at aPriori, Power BI analytics informing €2M+ marketing budget decisions at
+      Civica, and productionisation of machine learning models at Sentireal. Comfortable bridging technical and business audiences across architecture, delivery,
+      and stakeholder partnership.
     </div>
   </div>
 
-  <!-- CORE COMPETENCIES -->
+  <!-- CORE FOCUS -->
   <div class="section avoid-break">
-    <div class="section-title">Core Competencies</div>
+    <div class="section-title">Core Focus</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Data Engineering</span>
-      <span class="competency-tag">ML Pipelines &amp; MLOps</span>
-      <span class="competency-tag">Apache Airflow (MWAA)</span>
-      <span class="competency-tag">dbt Core</span>
-      <span class="competency-tag">Airbyte CDC</span>
-      <span class="competency-tag">AWS SageMaker</span>
-      <span class="competency-tag">Data Mesh Architecture</span>
-      <span class="competency-tag">Python (Typer · Pydantic · FastAPI)</span>
-      <span class="competency-tag">SQL (Redshift · BigQuery · T-SQL)</span>
-      <span class="competency-tag">AWS / GCP / Azure</span>
-      <span class="competency-tag">Docker</span>
-      <span class="competency-tag">Great Expectations</span>
-      <span class="competency-tag">Power BI &amp; DAX</span>
-      <span class="competency-tag">ABAC / IAM Policies</span>
+      <span class="competency-tag">Data Platform Architecture</span>
+      <span class="competency-tag">Analytics Engineering</span>
+      <span class="competency-tag">Data Quality &amp; Governance</span>
+      <span class="competency-tag">Dimensional Modelling</span>
+      <span class="competency-tag">Self-Service Analytics</span>
+      <span class="competency-tag">Cloud Data Warehousing</span>
+      <span class="competency-tag">Stakeholder Partnership</span>
+      <span class="competency-tag">Technical Leadership</span>
     </div>
   </div>
 
-  <!-- WORK EXPERIENCE -->
+  <!-- EXPERIENCE -->
   <div class="section">
-    <div class="section-title">Work Experience</div>
+    <div class="section-title">Experience</div>
+
+    <!-- V2 AI / Cartology PlanIt -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">V2 AI · Cartology PlanIt</span>
+        <span class="job-period">Apr 2026 – Jul 2026</span>
+      </div>
+      <div class="job-role">Senior Data Consultant (Data &amp; AI) <span class="job-location">• Melbourne, VIC</span></div>
+      <div class="job-summary">Delivered data assurance solutions for a retail-media platform, focusing on data quality and governance.</div>
+      <ul>
+        <li>Architected and led delivery of the Automated Data Assurance Framework, replacing manual data verification with automated quality checks for the PlanIt retail-media product to unblock faster, lower-risk releases.</li>
+        <li>Designed the framework so additional Cartology products can be onboarded through configuration rather than rebuilding, protecting the investment and shortening time-to-value.</li>
+        <li>Established Cartology's tiered Data Quality Standard, adopted as the Definition of Done for releases, with a graduated rollout (observe → warn → block) letting teams adopt at their own pace.</li>
+        <li>Enabled multiple engineering teams to build and test data changes in parallel without interference, removing a recurring source of release-day delays.</li>
+        <li>Made platform health visible to non-engineers: test coverage, performance, and quality trends now queryable as metrics rather than locked in tribal knowledge.</li>
+        <li>Modernised the development toolchain, eliminating environment drift between developer machines and production while rolling out engineering standards without disrupting in-flight work.</li>
+      </ul>
+    </div>
 
     <!-- aPriori Technologies -->
     <div class="job">
@@ -354,12 +370,15 @@
         <span class="job-period">Nov 2024 – Mar 2026</span>
       </div>
       <div class="job-role">Data Engineer <span class="job-location">• Belfast, Northern Ireland</span></div>
+      <div class="job-summary">Driving data platform initiatives for a global manufacturing analytics company.</div>
       <ul>
-        <li><strong>Source AI:</strong> Replaced Lambda-based ingestion jobs with Airbyte (CDC), reducing data ingestion latency and eliminating key bottlenecks feeding ML workloads. Contributed to the architecture of Source AI, an ML-powered negotiation assistant leveraging LLMs for automated sourcing workflows.</li>
-        <li><strong>GCP → AWS Migration:</strong> Migrated the data platform from GCP to AWS, contributing to technology decisions and implementation to ensure feature parity while optimising for cost and performance. Designed and implemented ABAC IAM policies using resource tagging to enforce least-privilege access. Built custom dbt macros for JSON flattening and Redshift SUPER column handling.</li>
-        <li><strong>Data Mesh Platform:</strong> Architected a federated Data Mesh platform enabling domain-driven data ownership with automated metadata management and consistent governance. Created <em>data-platform-cli</em>, a Typer-based Python CLI standardising Data Product scaffolding, deployment, and integration with dbt and Airflow. Integrated Great Expectations into dbt pipelines for continuous data validation and contract testing.</li>
+        <li>Built and maintained the analytics data layer across three business domains, structuring source data into reporting-ready models teams could query directly with confidence.</li>
+        <li>Designed a federated data governance model giving each business unit ownership of its data products while keeping standards consistent, scaling without bottlenecking on a central team.</li>
+        <li>Built <em>data-platform-cli</em>, an internal tool standardising how teams launched new data products; setup time dropped from days to minutes and it became the engineering standard.</li>
+        <li>Implemented attribute-based access controls across cloud environments, ensuring sensitive data reached only those with genuine need without slowing teams down.</li>
+        <li>Led the migration of the data platform between cloud providers, preserving full functionality while optimising for cost and performance.</li>
+        <li>Replaced a slow custom ingestion process with managed change-data-capture, removing latency in the data feeding business reports.</li>
       </ul>
-      <div class="job-tech"><strong>Stack:</strong> Python · SQL · dbt · Airflow (MWAA) · AWS (Redshift, S3, Lambda, ECS) · GCP (BigQuery, Cloud Composer) · Airbyte · Great Expectations · Docker</div>
     </div>
 
     <!-- Civica -->
@@ -369,11 +388,14 @@
         <span class="job-period">Feb 2022 – Mar 2024</span>
       </div>
       <div class="job-role">Data Scientist <span class="job-location">• Belfast, Northern Ireland</span></div>
+      <div class="job-summary">Delivered business intelligence and analytics solutions for public sector clients, focusing on customer insights and operational reporting.</div>
       <ul>
-        <li><strong>Tourism Ireland:</strong> Extracted and transformed customer engagement data from Dynamics 365 via Azure Synapse Analytics. Designed interactive Power BI dashboards and strategic BI reports that informed €2M+ marketing budget allocation.</li>
-        <li><strong>NI Appeals Service:</strong> Refactored legacy SSAS tabular models with data partitioning and query optimisation, reducing report load times. Developed advanced DAX measures and Power BI reports enabling self-service analytics for case management. Managed SSAS and SSRS infrastructure including automated refresh schedules.</li>
+        <li>Built end-to-end analytics for Tourism Ireland's marketing function, from pipelines to Power BI dashboards, giving the team direct visibility into campaign performance without analyst tickets.</li>
+        <li>Partnered with marketing stakeholders to define KPIs and dashboards that directly informed €2M+ in annual marketing budget allocation.</li>
+        <li>Structured customer engagement data from Dynamics 365 into a reporting-ready model, making it queryable across the organisation.</li>
+        <li>Modernised legacy analytics infrastructure for the Northern Ireland Appeals Service, materially improving report load times for case-management self-service analytics.</li>
+        <li>Built interactive Power BI reports for legal and administrative teams, cutting ad-hoc reporting demand and freeing analysts for higher-value work.</li>
       </ul>
-      <div class="job-tech"><strong>Stack:</strong> Azure Synapse Analytics · Power BI · T-SQL · DAX · SSAS · SSRS · Power Query · SQL Server · Dynamics 365</div>
     </div>
 
     <!-- Sentireal -->
@@ -383,28 +405,25 @@
         <span class="job-period">Nov 2020 – Feb 2022</span>
       </div>
       <div class="job-role">Data Scientist <span class="job-location">• Belfast, Northern Ireland</span></div>
+      <div class="job-summary">Built machine learning pipelines and predictive models for a VR training simulation startup.</div>
       <ul>
-        <li><strong>InterTradeIreland Co-Innovate:</strong> Designed a serverless data extraction pipeline using AWS Lambda for cost-efficient API integration. Conducted EDA and feature engineering in SageMaker notebooks. Developed and deployed an end-to-end ML pipeline with SageMaker and CodePipeline for automated model training, evaluation, and deployment. Trained predictive models using Scikit-Learn and TensorFlow to assess VR training effectiveness.</li>
+        <li>Productionised the company's VR training analytics, moving experimental ML models into a reliable, automatically updating production service exposed via API.</li>
+        <li>Identified the data features predicting VR training effectiveness, informing product decisions on what made training more impactful.</li>
+        <li>Built and tuned predictive models and documented the workflow so the team could extend it independently.</li>
       </ul>
-      <div class="job-tech"><strong>Stack:</strong> Python · Scikit-Learn · TensorFlow · Docker · AWS (Lambda, SageMaker, Cognito, API Gateway, CodePipeline, CodeDeploy)</div>
     </div>
   </div>
 
-  <!-- PUBLICATIONS & PROJECTS -->
+  <!-- SKILLS -->
   <div class="section avoid-break">
-    <div class="section-title">Publications &amp; Projects</div>
-
-    <div class="project">
-      <div class="project-title">Recommender Systems in Virtual Learning Environments <span class="project-badge">Publication</span></div>
-      <div class="project-desc">Investigated the application of conventional recommendation models in virtual learning environments. Published in AI Journal.</div>
-      <div class="project-tech">aijourn.com/recommender-systems-in-virtual-learning-environments</div>
-    </div>
-
-    <div class="project">
-      <div class="project-title">Multi-criteria Recommender Systems</div>
-      <div class="project-desc">Comprehensive comparative study investigating the effectiveness of multi-criteria ratings on recommendation quality.</div>
-      <div class="project-tech">Python · Scikit-Learn · Pandas · SciPy · SQL</div>
-    </div>
+    <div class="section-title">Skills</div>
+    <div class="skill-row"><span class="skill-category">Analytics Engineering:</span> dbt Core, Elementary OSS, dbt_project_evaluator, dbt_expectations, dbt_utils, Great Expectations, SQLFluff, dimensional modelling (Kimball), slim CI, contracts, CDC, medallion architecture</div>
+    <div class="skill-row"><span class="skill-category">Languages &amp; Tooling:</span> Python (Typer, Pydantic, FastAPI), Astral uv, SQL (BigQuery, Redshift, PostgreSQL, T-SQL), JavaScript/TypeScript, DAX, Bash</div>
+    <div class="skill-row"><span class="skill-category">BI &amp; Reporting:</span> Power BI Desktop/Service, DAX, SSAS, SSRS, Azure Synapse Analytics, self-service analytics design</div>
+    <div class="skill-row"><span class="skill-category">Orchestration &amp; CI/CD:</span> Apache Airflow (MWAA, Cloud Composer), Airbyte CDC, GitHub Actions, AWS CodePipeline</div>
+    <div class="skill-row"><span class="skill-category">Cloud:</span> GCP (BigQuery, Cloud Composer), AWS (S3, Redshift, Lambda, ECS, MWAA, SageMaker), Azure (Synapse, Data Factory, SSAS), Docker, Git</div>
+    <div class="skill-row"><span class="skill-category">ML &amp; Data Science:</span> AWS SageMaker, Scikit-Learn, TensorFlow, feature engineering, ML pipeline CI/CD</div>
+    <div class="skill-row"><span class="skill-category">Governance:</span> Data Mesh, federated governance, ABAC IAM policies, metadata management, data quality SLAs, tiered quality standards, Definition-of-Done frameworks</div>
   </div>
 
   <!-- EDUCATION -->
@@ -415,19 +434,24 @@
         <span class="edu-title">BSc Computer Science with Data Science &nbsp;·&nbsp; <span class="edu-org">University College Dublin</span></span>
         <span class="edu-year">2016 – 2020</span>
       </div>
-      <div class="edu-desc">Second Class Honours, Grade 1 (2:1) &nbsp;·&nbsp; GPA: 3.43 / 4.2 &nbsp;·&nbsp; Relevant coursework: Data Science in Python, Programming for Big Data, Probability &amp; Statistical Analysis, Machine Learning, Introduction to Artificial Intelligence</div>
+      <div class="edu-desc">Second Class Honours, Grade 1 (2:1) &nbsp;·&nbsp; GPA 3.43 / 4.2</div>
+      <div class="edu-desc">Data Science in Python, Programming for Big Data, Machine Learning, Statistical Analysis, Introduction to AI</div>
     </div>
   </div>
 
-  <!-- TECHNICAL SKILLS -->
+  <!-- PROJECTS & PUBLICATIONS -->
   <div class="section avoid-break">
-    <div class="section-title">Technical Skills</div>
-    <div class="skill-row"><span class="skill-category">ML &amp; Model Deployment:</span> AWS SageMaker (notebooks, training, endpoint deployment), Scikit-Learn, TensorFlow, predictive modelling, feature engineering, ML pipeline CI/CD (CodePipeline/CodeDeploy)</div>
-    <div class="skill-row"><span class="skill-category">Languages &amp; Frameworks:</span> Python (Typer, Pydantic, FastAPI), SQL (PostgreSQL, Redshift, BigQuery, T-SQL), JavaScript/TypeScript, dbt Core, DAX, Power Query M, Bash</div>
-    <div class="skill-row"><span class="skill-category">Orchestration &amp; Pipelines:</span> Apache Airflow (MWAA, Cloud Composer), Airbyte CDC, AWS CodePipeline, DAG-based workflow design, retry logic, idempotent execution patterns</div>
-    <div class="skill-row"><span class="skill-category">Cloud &amp; Infrastructure:</span> AWS (S3, Redshift, Lambda, ECS, MWAA, SageMaker, Cognito, API Gateway, CodePipeline), GCP (BigQuery, Cloud Composer, Cloud Build), Azure (Synapse, Data Factory, SSAS, SSRS), Docker, Git, Jenkins</div>
-    <div class="skill-row"><span class="skill-category">Data &amp; Governance:</span> Data Mesh architecture, medallion architecture, Great Expectations, dbt, data contracts, ABAC IAM policies, federated governance, metadata management, data modelling (CDC, ETL/ELT)</div>
-    <div class="skill-row"><span class="skill-category">BI &amp; Analytics:</span> Power BI Desktop/Service, DAX, SSAS, SSRS, data visualisation, self-service reporting</div>
+    <div class="section-title">Projects &amp; Publications</div>
+
+    <div class="project">
+      <div class="project-title">Recommender Systems in Virtual Learning Environments <span class="project-badge">Published, AI Journal</span></div>
+      <div class="project-desc">Investigated the application of conventional recommendation models in virtual learning environments.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Multi-criteria Recommender Systems</div>
+      <div class="project-desc">Comparative study on the effect of multi-criteria ratings on recommendation quality. Built with Python (Scikit-Learn, Pandas, SciPy) and SQL.</div>
+    </div>
   </div>
 
 </div>
