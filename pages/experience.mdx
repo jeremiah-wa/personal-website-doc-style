@@ -1,25 +1,37 @@
 
+## **V2 AI · Cartology _PlanIt_**
+**Senior Data Consultant (Data & AI)**
+_April 2026 – Present, Melbourne, VIC_
+
+Delivering data assurance solutions for Cartology's PlanIt retail-media platform, focusing on data quality and governance.
+
+---
+
 ## **aPriori Technologies**
 **Data Engineer**
 _November 2024 – March 2026, Belfast, Northern Ireland_
 
 ### Key Projects:
 
-- **Source AI: ML-Powered Negotiation Assistant**
-  - Replaced Lambda-based ingestion jobs with Airbyte (CDC), reducing data ingestion latency and eliminating key bottlenecks feeding ML workloads.
-  - Contributed to the architecture of Source AI, an ML-powered negotiation assistant leveraging LLMs for automated sourcing workflows.
-
-- **GCP to AWS Cloud Migration**
-  - Migrated the data platform from GCP to AWS, contributing to technology decisions and implementation to ensure feature parity while optimising for cost and performance.
-  - Designed and implemented ABAC IAM policies using resource tagging to enforce least-privilege access across cloud environments.
-  - Built custom dbt macros for JSON flattening and Redshift SUPER column handling, improving transformation reliability.
+- **Automated Data Assurance Framework**
+  - Architected and led delivery of the Automated Data Assurance Framework, replacing manual data verification with automated quality checks for the PlanIt retail-media product to unblock faster, lower-risk releases.
+  - Designed the framework so additional Cartology products can be onboarded through configuration rather than rebuilding, protecting the investment and shortening time-to-value.
+  - Established Cartology's tiered Data Quality Standard, adopted as the Definition of Done for releases, with a graduated rollout (observe → warn → block) letting teams adopt at their own pace.
+  - Enabled multiple engineering teams to build and test data changes in parallel without interference, removing a recurring source of release-day delays.
+  - Made platform health visible to non-engineers: test coverage, performance, and quality trends now queryable as metrics rather than locked in tribal knowledge.
+  - Modernised the development toolchain, eliminating environment drift between developer machines and production while rolling out engineering standards without disrupting in-flight work.
 
 - **aPriori Data Mesh Platform**
-  - Architected and developed a federated Data Mesh platform enabling domain-driven data ownership with automated metadata management and consistent governance across business units.
-  - Created `data-platform-cli`, an internal Python CLI tool (Typer-based) that standardises Data Product scaffolding, deployment, and integration with dbt and Airflow.
-  - Integrated Great Expectations into dbt pipelines for continuous data validation and contract testing, improving data quality SLAs.
+  - Built and maintained the analytics data layer across three business domains, structuring source data into reporting-ready models teams could query directly with confidence.
+  - Designed a federated data governance model giving each business unit ownership of its data products while keeping standards consistent, scaling without bottlenecking on a central team.
+  - Built `data-platform-cli`, an internal tool standardising how teams launched new data products; setup time dropped from days to minutes and it became the engineering standard.
+  - Implemented attribute-based access controls across cloud environments, ensuring sensitive data reached only those with genuine need without slowing teams down.
 
-**Tools Used**: Python, SQL, dbt, Airflow (MWAA), AWS (Redshift, S3, Lambda, ECS), GCP (BigQuery, Cloud Composer), Airbyte, Great Expectations, Docker
+- **GCP to AWS Cloud Migration**
+  - Led the migration of the data platform between cloud providers, preserving full functionality while optimising for cost and performance.
+  - Replaced a slow custom ingestion process with managed change-data-capture, removing latency in the data feeding business reports.
+
+**Tools Used**: Python, SQL, dbt, Airflow (MWAA), AWS (Redshift, S3, Lambda, ECS), GCP (BigQuery, Cloud Composer), Airbyte CDC, Great Expectations, Docker
 
 ---
 
@@ -29,15 +41,14 @@ _February 2022 – March 2024, Belfast, Northern Ireland_
 
 ### Key Projects:
 
-- **Tourism Ireland: Dynamics 365 Reporting Solution**
-  - Extracted and transformed customer engagement data from Dynamics 365 using Azure Synapse Analytics.
-  - Designed and developed interactive Power BI dashboards providing self-service analytics for marketing campaign performance.
-  - Collaborated with stakeholders to define KPIs and create strategic BI reports that informed €2M+ marketing budget allocation.
+- **Tourism Ireland: Marketing Analytics**
+  - Built end-to-end analytics for Tourism Ireland's marketing function, from pipelines to Power BI dashboards, giving the team direct visibility into campaign performance without analyst tickets.
+  - Partnered with marketing stakeholders to define KPIs and dashboards that directly informed €2M+ in annual marketing budget allocation.
+  - Structured customer engagement data from Dynamics 365 into a reporting-ready model, making it queryable across the organisation.
 
 - **Northern Ireland Appeals Service: On-Premises Reporting Solution**
-  - Refactored and optimised legacy SSAS tabular models, implementing data partitioning and query optimisation that reduced report load times.
-  - Developed advanced DAX measures and interactive Power BI reports enabling self-service analytics for case management.
-  - Managed SSAS and SSRS infrastructure, including automated refresh schedules and maintenance.
+  - Modernised legacy analytics infrastructure for the Northern Ireland Appeals Service, materially improving report load times for case-management self-service analytics.
+  - Built interactive Power BI reports for legal and administrative teams, cutting ad-hoc reporting demand and freeing analysts for higher-value work.
 
 **Tools Used**: Azure Synapse Analytics, Power BI, T-SQL, DAX, SSAS, SSRS, Power Query, SQL Server, Dynamics 365
 
@@ -50,10 +61,9 @@ _November 2020 – February 2022, Belfast, Northern Ireland_
 ### Key Projects:
 
 - **InterTradeIreland Co-Innovate: VR Simulation Training Platform**
-  - Designed and implemented a serverless data extraction pipeline using AWS Lambda for cost-efficient API integration.
-  - Conducted exploratory data analysis and feature engineering using AWS SageMaker notebooks to identify key performance indicators.
-  - Developed and deployed an end-to-end ML pipeline with AWS SageMaker and CodePipeline for automated model training, evaluation, and deployment to API endpoints.
-  - Trained and optimised predictive models using Scikit-Learn and TensorFlow to assess VR training effectiveness.
+  - Productionised the company's VR training analytics, moving experimental ML models into a reliable, automatically updating production service exposed via API.
+  - Identified the data features predicting VR training effectiveness, informing product decisions on what made training more impactful.
+  - Built and tuned predictive models and documented the workflow so the team could extend it independently.
 
 **Tools Used**: Python, Scikit-Learn, TensorFlow, Docker, AWS (Lambda, SageMaker, Cognito, API Gateway, CodePipeline, CodeDeploy)
 
@@ -61,9 +71,10 @@ _November 2020 – February 2022, Belfast, Northern Ireland_
 
 ## **Skills & Competencies**
 
-- **ML & Model Deployment**: AWS SageMaker (notebooks, training, endpoint deployment), Scikit-Learn, TensorFlow, predictive modelling, feature engineering, ML pipeline CI/CD (CodePipeline/CodeDeploy)
-- **Languages & Frameworks**: Python (Typer, Pydantic, FastAPI), SQL (PostgreSQL, Redshift, BigQuery, T-SQL), JavaScript/TypeScript, dbt Core, DAX, Power Query M, Bash
-- **Orchestration & Pipelines**: Apache Airflow (MWAA, Cloud Composer), Airbyte CDC, AWS CodePipeline, DAG-based workflow design, retry logic, idempotent execution patterns
-- **Cloud & Infrastructure**: AWS (S3, Redshift, Lambda, ECS, MWAA, SageMaker, Cognito, API Gateway, CodePipeline), GCP (BigQuery, Cloud Composer, Cloud Build), Azure (Synapse, Data Factory, SSAS, SSRS), Docker, Git, Jenkins
-- **Data & Governance**: Data Mesh architecture, medallion architecture, Great Expectations, dbt, data contracts, ABAC IAM policies, federated governance, metadata management, data modelling (CDC, ETL/ELT)
-- **BI & Analytics**: Power BI Desktop/Service, DAX, SSAS, SSRS, data visualisation, self-service reporting
+- **Analytics Engineering**: dbt Core, Elementary OSS, dbt_project_evaluator, dbt_expectations, dbt_utils, Great Expectations, SQLFluff, dimensional modelling (Kimball), slim CI, contracts, CDC, medallion architecture
+- **Languages & Tooling**: Python (Typer, Pydantic, FastAPI), Astral uv, SQL (BigQuery, Redshift, PostgreSQL, T-SQL), JavaScript/TypeScript, DAX, Bash
+- **BI & Reporting**: Power BI Desktop/Service, DAX, SSAS, SSRS, Azure Synapse Analytics, self-service analytics design
+- **Orchestration & CI/CD**: Apache Airflow (MWAA, Cloud Composer), Airbyte CDC, GitHub Actions, AWS CodePipeline
+- **Cloud**: GCP (BigQuery, Cloud Composer), AWS (S3, Redshift, Lambda, ECS, MWAA, SageMaker), Azure (Synapse, Data Factory, SSAS), Docker, Git
+- **ML & Data Science**: AWS SageMaker, Scikit-Learn, TensorFlow, feature engineering, ML pipeline CI/CD
+- **Governance**: Data Mesh, federated governance, ABAC IAM policies, metadata management, data quality SLAs, tiered quality standards, Definition-of-Done frameworks
